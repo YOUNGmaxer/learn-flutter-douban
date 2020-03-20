@@ -1,3 +1,4 @@
+import 'package:douban_app/HotMovieListWidget.dart';
 import 'package:flutter/material.dart';
 
 class HotWidget extends StatefulWidget {
@@ -67,7 +68,7 @@ class HotWidgetState extends State<HotWidget> {
                   child: Container(
                     child: TabBarView(
                       children: <Widget>[
-                        Center(child: Text('正在热映')),
+                        HotMovieListWidget(),
                         Center(child: Text('即将上映'))
                       ],
                     ),
